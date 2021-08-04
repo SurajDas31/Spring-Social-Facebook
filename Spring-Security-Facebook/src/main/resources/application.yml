@@ -1,0 +1,20 @@
+security:
+  oauth2:
+    sso:
+      login-path: /facebook
+    client:
+      client-id: 912329979618346
+      client-secret: d4e59aa4db453f101541e3e4733bc813
+      access-token-uri: https://graph.facebook.com/oauth/access_token
+      user-authorization-uri: https://www.facebook.com/dialog/oauth
+      token-name: oauth_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+    resource:
+      user-info-uri: https://graph.facebook.com/me
+
+spring:
+  mvc:
+    view:
+      suffix: .html
+      prefix: /resources/templates/
